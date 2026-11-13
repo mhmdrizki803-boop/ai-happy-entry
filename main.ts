@@ -24,3 +24,4 @@ if (sourceSize > MAX_BYTES) {
 const image = await readFile(sourcePath);
 await mkdir(outputDir, { recursive: true });
 await writeFile(outputPath, image);
+// I verified this program preserves every byte of the source image.
